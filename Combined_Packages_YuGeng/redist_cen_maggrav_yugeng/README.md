@@ -19,7 +19,7 @@
    function of azimuth
 
 **Last update**
-* Added state boundaries - wraps the functionalities of GSHHG dataset
+* Added `borders v2` - wraps the functionality of the GSHHG database
 
 All tests passed on OS X 10.6.8 and 10.9.5 with GMT 4 installed.
 
@@ -55,9 +55,8 @@ All tests passed on OS X 10.6.8 and 10.9.5 with GMT 4 installed.
 
 * Miscellanies about `borders v2`
   - `borders v2` is a light alternative to the prominent Mapping Toolbox that
-      comes with MATLAB R2015+. It works on all the MATLAB versions even if you
-      do not have the Mapping Toolbox. An obvious advantage of `borders v2`
-      over the GSHHG dataset is its file size.
+      comes with MATLAB R2015+. It works on all the MATLAB versions in case you
+      do not have the Mapping Toolbox.
   - To plot a different region not in the U.S., change `'continental us'` to
       `'countries'`.
   - Specify `'nomap'` to use pure number tickmarks, for example, -90 represents
