@@ -25,7 +25,7 @@ All tests passed on OS X 10.6.8 and 10.9.5 with GMT 4 installed.
 
 
 -----------------------------------------------------------------------------
- Horizontal gradients, cross-section profiles and derivatives
+ Compute gradients, profiles and derivatives
 -----------------------------------------------------------------------------
 
 1. Use `main` to show places where magnitudes of horizontal gradients are
