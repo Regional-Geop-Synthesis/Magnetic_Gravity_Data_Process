@@ -1,7 +1,6 @@
 **Yu Geng's gravity forward and inverse modeling program** <br>
     - *based upon Shu-Chioung Chiu's `prob2.m`* <br>
 
-**Abstract**
 > The project aims to combine Chuck's `grav2d.m` program (for forward modeling)
 > and Shu-Chioung's `prob2.m` program (for inverse modeling) in a single
 > package and provide detailed, easier-to-understand documentations.
@@ -9,14 +8,28 @@
 > Elizabeth's screenshots, digitize them and used the data as the inputs for
 > inverse modeling.
 
+> Shu-Chioung Chiu did not fully take care of the adjustment of array sizes for
+> the cases of different dataset, unfortunately.
+> Even though the # of meansures is given by `N`, the variables `x` and `xx`
+> are fixed at a size of 25.
+> Besides, all of the intermediate data are saved in the root directory, which
+> is not a good habit.
+> We fixed all these problems in this redistribution.
+> The modified subroutine should take care of different study cases.
+> Basically, no adjustment is needed for a different dataset.
+
+Commented by Yu Geng, <br>
+`2018-01-06` <br>
+
 **New features added**
-1) Read Elizabeth's gravity profiles (output from `grav2d`) as the input data
-2) Regularized working directory
+1. Read Elizabeth's gravity profiles (output from `grav2d`) as the input data
+2. Regularized working directory
    - Intermediate results are written into subfolders
-3) Inverting two gravity profiles and plot them at once
-4) Study domain and # of measurements are automatically adjusted according to
-   your input data
-5) Several tiny changes made on `prob2.m` because of the input data change
+3. Inverting two gravity profiles and plotting them stacked
+4. Study domain and # of measurements are automatically adjusted according to
+    your input data
+5. Several tiny changes made on `prob2.m` because of the change of input data
+    (namely, using an existing gravity profile)
 
 All tests passed on MATLAB R2014a and R2015a.
 
