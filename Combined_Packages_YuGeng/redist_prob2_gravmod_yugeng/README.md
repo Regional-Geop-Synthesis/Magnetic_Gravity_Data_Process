@@ -8,16 +8,6 @@
 > Elizabeth's screenshots, digitize them and used the data as the inputs for
 > inverse modeling.
 
-> Shu-Chioung Chiu did not fully take care of the adjustment of array sizes for
-> the cases of different dataset, unfortunately.
-> Even though the # of meansures is given by `N`, the variables `x` and `xx`
-> are fixed at a size of 25.
-> Besides, all of the intermediate data are saved in the root directory, which
-> is not a good habit.
-> We fixed all these problems in this redistribution.
-> The modified subroutine should take care of different study cases.
-> Basically, no adjustment is needed for a different dataset.
-
 Commented by Yu Geng, <br>
 `2018-01-06` <br>
 
